@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-white w-full ">
+        <div class="header h-16 bg-blue-500 flex items-center  ">
+            <div class="logo w-1/5 h-16 ml-15 cursor-pointer ">
+                <a href="index.html">
+                <img class="w-28 h-16 ml-10 mt-1 object-contain   " src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" >
+                </a>
+            </div>
+            <input class="h-10 w-80 border-opacity-75 px-3 focus:outline-none text-black" id="search" type="text" placeholder="Loptops">
+            <div class="serach-icon h-10 w-10 cursor-pointer hover:bg-gray-200 flex justify-center items-center bg-white text-blue-500">
+                <svg class="h-10 w-6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+            <button class="h-8 w-28 ml-10 bg-white font-bold text-blue-500 hover:bg-gray-200" type="button">Login</button>
+            <div class="More h-12 w-27 ml-5 font-medium cursor-pointer items-center ml-5 text-white flex">More
+                <svg class="h-4 w-5 mt-1" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+            </div>
+            <div class="Cart h-10 w-25 items-center font-medium text-white cursor-pointer  flex">
+                
+                <svg class="h-5 w-13 ml-4 " xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                  </svg>Cart
+            </div>
+            <div class="Profile flex items-center ml-auto ">
+                
+                <svg class="h-10 w-13  cursor-pointer hover:text-blue-300 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="main-section bg-gray-200 pt-10  ">
+        <div class="product-colloction h-60 w-1/7 mb-5 ml-10 mr-10 bg-white flex">
+            <div class="img">
+               <img class="p-1" src="data:image/jpeg;base64,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">
+            </div>
+            <div class="details mt-4  ">
+                <h1 class="text-lg font-bold text-blue-600">APPLE MacBook Air M1 - (8 GB/256 GB SSD/Mac OS Big Sur) MGN63HN/A</h1>
+                <div class="rating-review flex ">
+                    <div class="rating h-5 mt-1 w-10 font-bold text-white flex justify-center items-center rounded-sm bg-green-600">4.7
+                        <svg class="h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p class=" ml-3  text-gray-500">281 Ratings & 27 Reviews</p>
+                    <img class="h-5 w-15 ml-3 mt-1" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png">
+                </div>
+                <div class="flex">
+                <div class="price mt-2 text-black text-2xl">₹ 88,990</div>
+                <div class="offer mt-3 ml-3 text-gray-500">  32% off</div>
+                </div>
+                <div class="  font-bold text-lg ">Save extra with No Cost EMI</div>
+                <div class=" text-gray-500">FREE Delivery by Flipkart</div>
+                <div class="button flex">
+                    <button class="bg-blue-500 mt-5 mr-5 hover:bg-blue-300 text-white rounded-xl h-10 w-60">Buy Now</button>
+                    <button class="bg-blue-500 mt-5 hover:bg-blue-300 text-white rounded-xl h-10 w-20">Card</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-colloction h-60 w-1/7 mb-5 ml-10 mr-10 bg-white flex">
+            <div class="img">
+               <img class="w-60 h-50 mt-5 p-5" src="https://m.media-amazon.com/images/I/51AtifCisBL._AC_UY327_FMwebp_QL65_.jpg">
+            </div>
+            <div class="details mt-4  ">
+                <h1 class="text-lg font-bold text-blue-600">Lenovo V15 Intel Core i5 11th Gen 15.6" (39.62 cm) FHD Thin and Light</h1>
+                <div class="rating-review flex ">
+                    <div class="rating h-5 mt-1 w-10 font-bold text-white flex justify-center items-center rounded-sm bg-green-600">4.7
+                        <svg class="h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p class=" ml-3  text-gray-500">281 Ratings & 27 Reviews</p>
+                    <img class="h-5 w-15 ml-3 mt-1" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png">
+                </div>
+                <div class="flex">
+                <div class="price mt-2 text-black text-2xl">₹ 59,000</div>
+                <div class="offer mt-3 ml-3 text-gray-500">  22% off</div>
+                </div>
+                <div class="  font-bold text-lg ">Save extra with No Cost EMI</div>
+                <div class=" text-gray-500">FREE Delivery by Flipkart</div>
+                <div class="button flex">
+                    <button class="bg-blue-500 mt-5 mr-5 hover:bg-blue-300 text-white rounded-xl h-10 w-60">Buy Now</button>
+                    <button class="bg-blue-500 mt-5 hover:bg-blue-300 text-white rounded-xl h-10 w-20">Card</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-colloction h-60 w-1/7 mb-5 ml-10 mr-10 bg-white flex">
+            <div class="img">
+               <img class="w-60 h-50 p-4 mt-5" src="https://m.media-amazon.com/images/I/613WULNEr1L._AC_UY327_FMwebp_QL65_.jpg">
+            </div>
+            <div class="details mt-4  ">
+                <h1 class="text-lg font-bold text-blue-600">HP Chromebook 14-inch (35.56 cms) Thin & Light Touchscreen Laptop </h1>
+                <div class="rating-review flex ">
+                    <div class="rating h-5 mt-1 w-10 font-bold text-white flex justify-center items-center rounded-sm bg-green-600">4.7
+                        <svg class="h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p class=" ml-3  text-gray-500">281 Ratings & 27 Reviews</p>
+                    <img class="h-5 w-15 ml-3 mt-1" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png">
+                </div>
+                <div class="flex">
+                <div class="price mt-2 text-black text-2xl">₹ 1,20,000</div>
+                <div class="offer mt-3 ml-3 text-gray-500">  2% off</div>
+                </div>
+                <div class="  font-bold text-lg ">Save extra with No Cost EMI</div>
+                <div class=" text-gray-500">FREE Delivery by Flipkart</div>
+                <div class="button flex">
+                    <button class="bg-blue-500 mt-5 mr-5 hover:bg-blue-300 text-white rounded-xl h-10 w-60">Buy Now</button>
+                    <button class="bg-blue-500 mt-5 hover:bg-blue-300 text-white rounded-xl h-10 w-20">Card</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-colloction h-60 w-1/7 mb-5 ml-10 mr-10 bg-white flex">
+            <div class="img">
+               <img class="w-60 h-50 p-3 mt-5" src="https://m.media-amazon.com/images/I/81Ne5qKmE8L._AC_UY327_FMwebp_QL65_.jpg">
+            </div>
+            <div class="details mt-4  ">
+                <h1 class="text-lg font-bold text-blue-600">
+                    
+                    HP 15 10th Gen Intel Core i3 Thin and Light 15.6 inches FHD Laptop</h1>
+                <div class="rating-review flex ">
+                    <div class="rating h-5 mt-1 w-10 font-bold text-white flex justify-center items-center rounded-sm bg-green-600">4.7
+                        <svg class="h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                    <p class=" ml-3  text-gray-500">281 Ratings & 27 Reviews</p>
+                    <img class="h-5 w-15 ml-3 mt-1" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png">
+                </div>
+                <div class="flex">
+                <div class="price mt-2 text-black text-2xl">₹ 40,990</div>
+                <div class="offer mt-3 ml-3 text-gray-500">  32% off</div>
+                </div>
+                <div class="  font-bold text-lg ">Save extra with No Cost EMI</div>
+                <div class=" text-gray-500">FREE Delivery by Flipkart</div>
+                <div class="button flex">
+                    <button class="bg-blue-500 mt-5 mr-5 hover:bg-blue-300 text-white rounded-xl h-10 w-60">Buy Now</button>
+                    <button class="bg-blue-500 mt-5 hover:bg-blue-300 text-white rounded-xl h-10 w-20">Card</button>
+                </div>
+            </div>
+        </div>
+        <div class="page-next pb-10">
+            <div class="next flex ml-10">
+                <div class="number flex ml-10">
+                    <p class="font-bold ml-10 "> </p>
+                    <p class="font-bold ml-10 ">1</p>
+                    <p class="font-bold ml-10 ">2</p>
+                    <p class="font-bold ml-10 ">3</p>
+                    <p class="font-bold ml-10 ">4</p>
+                    <button class="bg-blue-500 h-8 ml-10 w-40 text-white ">Next Page</button>
+                    <h1 class="ml-10 ">@page . mail-Flipkart</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
